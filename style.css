@@ -12,7 +12,7 @@ body {
   align-items: center;
   margin: 3rem 0;
   flex-direction: column;
-  gap: 3rem 0;
+  gap: 3rem;
 }
 
 input {
@@ -140,9 +140,57 @@ h1 {
   }
 }
 
-@media (width<=768px) {
+@media (width<=767px) {
   .images-box {
     width: 90%;
     grid-template-columns: 100%;
+  }
+  input {
+    width: 60%;
+  }
+}
+
+@media (width<=500px) {
+  body {
+    gap: 2rem;
+  }
+  .images-box {
+    width: 90%;
+    grid-template-columns: 100%;
+  }
+  input {
+    width: 50%;
+    margin: auto;
+    font-size: 1rem;
+  }
+  button {
+    font-size: 1rem;
+  }
+  form {
+    text-align: center;
+  }
+}
+
+@media (width<=330px) {
+  body {
+    gap: 2rem;
+  }
+  .images-box {
+    width: 90%;
+    grid-template-columns: 100%;
+  }
+  input {
+    width: 50%;
+    margin: auto;
+    font-size: 0.75rem;
+  }
+  form {
+    text-align: center;
+  }
+  button {
+    font-size: 0.75rem;
+  }
+  h1 {
+    font-size: 1rem;
   }
 }
